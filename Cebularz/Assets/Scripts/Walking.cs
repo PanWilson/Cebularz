@@ -8,22 +8,24 @@ public class Walking : MonoBehaviour {
 
     NavMeshAgent NavAgent;
 
-
+    [SerializeField]
+    float speed = 3.5f;
     // Use this for initialization
     void Start () {
 
         NavAgent = GetComponent<NavMeshAgent>();
         NavAgent.updateUpAxis = false;
         NavAgent.updateRotation = false;
+        NavAgent.speed = speed;
 
-	}
+    }
 	
 	// Update is called once per frame
 	void Update () {
 		
 	}
 
-    void MoveTo(Vector3 location)
+    public void MoveTo(Vector3 location)
     {
         NavAgent.destination = location;
     }
