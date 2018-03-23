@@ -31,7 +31,7 @@ public class HandDamage : MonoBehaviour {
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.GetComponent<HealthLogic>() && enemy==null)
+        if (enemy == null && collision.GetComponent<HealthLogic>() && !enemy.GetComponent<Tagger>().haveTag("Bad"))
         {
             enemy = collision.gameObject;
             timer = 0;
@@ -41,7 +41,6 @@ public class HandDamage : MonoBehaviour {
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        print("see you");
         if(enemy!=null && collision.gameObject == enemy)
         {
             enemy = null;

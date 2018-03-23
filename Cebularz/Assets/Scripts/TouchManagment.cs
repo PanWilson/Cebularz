@@ -17,10 +17,13 @@ public class TouchManagment : MonoBehaviour {
     Vector2 TouchedPoint;
 
     [SerializeField]
-    public LayerMask mask;
-    public float MoveTriggerTime = 1;
-    public float TouchMoveMargin = 0;
-    public float fingerRadius = 1;
+    LayerMask mask;
+    [SerializeField]
+    float MoveTriggerTime = 1;
+    [SerializeField]
+    float TouchMoveMargin = 0;
+    [SerializeField]
+    float fingerRadius = 1;
 
     // Use this for initialization
     void Start () {
@@ -36,7 +39,7 @@ public class TouchManagment : MonoBehaviour {
             if (Input.GetTouch(0).phase == TouchPhase.Began)
             {
                 RaycastHit2D hit = Physics2D.CircleCast(cam.ScreenToWorldPoint(Input.GetTouch(0).position),fingerRadius, Vector3.forward,0,mask);
-                if (hit.collider != null)
+                if (hit.collider != null && CanAdd(hit))
                 {
                     if (!Units.Contains(hit.transform.gameObject))
                     {
@@ -88,7 +91,8 @@ public class TouchManagment : MonoBehaviour {
 
 
             foreach (RaycastHit2D h in hits)
-                {
+            {
+                if (CanAdd(h)) { 
                     if (!Units.Contains(h.transform.gameObject))
                     {
                         Units.Add(h.transform.gameObject);
@@ -100,6 +104,7 @@ public class TouchManagment : MonoBehaviour {
                         h.transform.gameObject.GetComponent<SpriteRenderer>().color = Color.blue;
                     }
                 }
+            }
            
         }
 
@@ -145,5 +150,9 @@ public class TouchManagment : MonoBehaviour {
 
         return new Vector2(Mathf.Abs(worldPoint2.x - worldPoint1.x) , Mathf.Abs(worldPoint2.y - worldPoint1.y));
     }
-
+    bool CanAdd(RaycastHit2D hit)
+    {
+        if (hit.transform.GetComponent<Tagger>().haveTag("CanAdd")) return true;
+        else return false;
+    }
 }

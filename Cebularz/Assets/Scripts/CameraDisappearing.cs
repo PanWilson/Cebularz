@@ -1,11 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Tilemaps;
 
 public class CameraDisappearing : MonoBehaviour {
 
     
-    SpriteRenderer sprite;
     int direction = 1;
     float t = 1;
     List<GameObject> Children;
@@ -15,11 +15,12 @@ public class CameraDisappearing : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
+        Children = new List<GameObject>();
         foreach (Transform child in transform)
         {
-            if (child.tag == "Disappear")
+            if (child.tag == "Diasppear")
             {
-                Children.Add(child.gameObject);
+                Children.Add(child.transform.gameObject);
             }
         }
     }
@@ -42,7 +43,8 @@ public class CameraDisappearing : MonoBehaviour {
     {
         foreach (GameObject child in Children)
         {
-            child.GetComponent<SpriteRenderer>().color = new Color(sprite.color.r, sprite.color.g, sprite.color.b, Mathf.Lerp(0, 1, x));
+            Tilemap h = child.GetComponent<Tilemap>();
+            h.color = new Color(h.color.r, h.color.g, h.color.b, Mathf.Lerp(0, 1, x));
         }
     }
 }
