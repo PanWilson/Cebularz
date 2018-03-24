@@ -1,15 +1,13 @@
 fileFormatVersion: 2
-guid: ad21675260d7ad04194f9e08100109c3
-timeCreated: 1521576206
+guid: d4f098589fdd17f458ebd9d697fde9a2
+timeCreated: 1521843992
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: BrownBrick_1
-    21300002: BrownBrick_2
-    21300004: BrownBrick_3
-    21300006: BrownBrick_6
-    21300008: BrownBrick_7
-    21300010: BrownBrick_8
+    21300000: BrownBricks2_0
+    21300002: BrownBricks2_1
+    21300004: BrownBricks2_2
+    21300006: BrownBricks2_3
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -106,24 +104,10 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: BrownBrick_1
+      name: BrownBricks2_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 34
-        width: 68
-        height: 34
-      alignment: 9
-      pivot: {x: 0.75, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: BrownBrick_2
-      rect:
-        serializedVersion: 2
-        x: 68
         y: 34
         width: 34
         height: 34
@@ -134,38 +118,24 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: BrownBrick_3
+      name: BrownBricks2_1
       rect:
         serializedVersion: 2
-        x: 102
+        x: 34
         y: 34
-        width: 68
+        width: 34
         height: 34
-      alignment: 9
-      pivot: {x: 0.25, y: 0.5}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: BrownBrick_6
+      name: BrownBricks2_2
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 68
-        height: 34
-      alignment: 9
-      pivot: {x: 0.75, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: BrownBrick_7
-      rect:
-        serializedVersion: 2
-        x: 68
         y: 0
         width: 34
         height: 34
@@ -176,15 +146,15 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: BrownBrick_8
+      name: BrownBricks2_3
       rect:
         serializedVersion: 2
-        x: 102
+        x: 34
         y: 0
-        width: 68
+        width: 34
         height: 34
-      alignment: 9
-      pivot: {x: 0.25, y: 0.5}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

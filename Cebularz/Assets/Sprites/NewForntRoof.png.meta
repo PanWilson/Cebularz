@@ -1,15 +1,18 @@
 fileFormatVersion: 2
-guid: ad21675260d7ad04194f9e08100109c3
-timeCreated: 1521576206
+guid: 2484fa44442229740b469df2fa3780ab
+timeCreated: 1521841765
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: BrownBrick_1
-    21300002: BrownBrick_2
-    21300004: BrownBrick_3
-    21300006: BrownBrick_6
-    21300008: BrownBrick_7
-    21300010: BrownBrick_8
+    21300000: NewForntRoof_1
+    21300002: NewForntRoof_2
+    21300004: NewForntRoof_3
+    21300006: NewForntRoof_6
+    21300008: NewForntRoof_7
+    21300010: NewForntRoof_8
+    21300012: NewForntRoof_11
+    21300014: NewForntRoof_12
+    21300016: NewForntRoof_13
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -106,7 +109,49 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: BrownBrick_1
+      name: NewForntRoof_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 68
+        width: 68
+        height: 34
+      alignment: 9
+      pivot: {x: 0.75, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NewForntRoof_2
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 68
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NewForntRoof_3
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 68
+        width: 68
+        height: 34
+      alignment: 9
+      pivot: {x: 0.25, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: NewForntRoof_6
       rect:
         serializedVersion: 2
         x: 0
@@ -120,7 +165,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: BrownBrick_2
+      name: NewForntRoof_7
       rect:
         serializedVersion: 2
         x: 68
@@ -134,7 +179,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: BrownBrick_3
+      name: NewForntRoof_8
       rect:
         serializedVersion: 2
         x: 102
@@ -148,7 +193,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: BrownBrick_6
+      name: NewForntRoof_11
       rect:
         serializedVersion: 2
         x: 0
@@ -162,7 +207,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: BrownBrick_7
+      name: NewForntRoof_12
       rect:
         serializedVersion: 2
         x: 68
@@ -176,7 +221,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: BrownBrick_8
+      name: NewForntRoof_13
       rect:
         serializedVersion: 2
         x: 102
